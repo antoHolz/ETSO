@@ -26,7 +26,8 @@ If you find our code or paper useful, please consider citing
 ## Results and parameters
 
 The code in this repository  is intended as a means to reproduce the results obtained in our paper. For the simulation, the parameters provided in the python files should produce the same results as we obtained. For the hardware experiments, this will depend on the exact hardware setup. In our setup we used a Bitcraze Crazyflie 2.1, a Vicon camera system consisting of 12 cameras, and a ground computer.
-To recreate our simulation results, first install the necessary packages and then just run the corresponding python files. 
+
+To recreate our results, first install the necessary packages and then run the corresponding python files (with the necessary adjustments in the hardware case, if a different system is being used). 
 
 Below you will find a list of the used hyperparameters (as are also found in the code):
 
