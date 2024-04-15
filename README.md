@@ -5,10 +5,13 @@ The folders "ETSO_simulation" and "ETSO_hardware" contain each the code for the 
 
 ![ETSO intuition](https://github.com/antoHolz/ETSO/blob/main/ETSO_intuition_method.png)
 
-We propose a new algorithm, Event-Triggered SafeOpt (ETSO), which adapts to changes online solely relying on the observed costs. At its core, ETSO uses an event trigger to detect significant deviations between observations and the current surrogate of the objective function. ETSO starts by optimizing a the performance function with SafeOpt. When a significant change is detected, the algorithm reverts to a safe backup controller, calculates a new threshold J_{min,t}, and exploration is restarted. In this way, safety is recovered and maintained across changes. 
+We propose a new algorithm, **Event-Triggered SafeOpt (ETSO)**, which adapts to changes online solely relying on the observed costs. At its core, ETSO uses an *event trigger* to detect significant deviations between observations and the current surrogate of the objective function. ETSO starts by optimizing a the performance function with *SafeOpt*. When a significant change is detected, the algorithm reverts to a safe backup controller, calculates a new threshold J<sub>min,t</sub>, and exploration is restarted. In this way, safety is recovered and maintained across changes. 
 
 We evaluated ETSO on quadcopter controller tuning, both in simulation and hardware experiments. ETSO outperforms state-of-the-art safe BO, achieving superior control performance over time while maintaining safety. For the hardware results, we also have a video available in https://youtu.be/nLmeO-fMIvg. 
+
 ![Header](https://github.com/antoHolz/ETSO/blob/main/ETSO_header_figure.png)
+
+Our implementation uses [GPyTorch](https://gpytorch.ai), [SafeOpt}(https://github.com/befelix/SafeOpt) and the [gym-pybullet-drones](https://github.com/utiasDSL/gym-pybullet-drones) gym simulation environment. 
 
 If you find our code or paper useful, please consider citing
 ```
