@@ -11,7 +11,7 @@ We evaluated ETSO on quadcopter controller tuning, both in simulation and hardwa
 
 ![Header](https://github.com/antoHolz/ETSO/blob/main/ETSO_header_figure.png)
 
-Our implementation uses [GPyTorch](https://gpytorch.ai), [SafeOpt}(https://github.com/befelix/SafeOpt) and the [gym-pybullet-drones](https://github.com/utiasDSL/gym-pybullet-drones) gym simulation environment. 
+Our implementation uses [GPyTorch](https://gpytorch.ai), [SafeOpt](https://github.com/befelix/SafeOpt) and the [gym-pybullet-drones](https://github.com/utiasDSL/gym-pybullet-drones) gym simulation environment. 
 
 If you find our code or paper useful, please consider citing
 ```
@@ -28,6 +28,6 @@ If you find our code or paper useful, please consider citing
 The code in this repository  is intended as a means to reproduce the results obtained in our paper. For the simulation, the parameters provided in the python files should produce the same results as we obtained. For the hardware experiments, this will depend on the exact hardware setup. In our setup we used a Bitcraze Crazyflie 2.1, a Vicon camera system consisting of 12 cameras, and a ground computer.
 To recreate our simulation results, first install the necessary packages and then just run the corresponding python files. 
 
-Below you will also find a list of the used hyperparameters (as are also found in the code)
+Below you will find a list of the used hyperparameters (as are also found in the code):
 
 ![Hyperparam](https://github.com/antoHolz/ETSO/blob/main/Hyperparameters%20ETSO.PNG)
