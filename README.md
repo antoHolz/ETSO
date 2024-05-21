@@ -13,13 +13,14 @@ We evaluated ETSO on quadcopter controller tuning, both in simulation and hardwa
 
 Our implementation uses [GPyTorch](https://gpytorch.ai), [SafeOpt](https://github.com/befelix/SafeOpt) and the [gym-pybullet-drones](https://github.com/utiasDSL/gym-pybullet-drones) gym simulation environment. 
 
-If you find our code or paper useful, please consider citing (will be updated once the conference preceedings are public)
+If you find our code or paper useful, please consider citing
 ```
 @article{holzapfel2023event,
-  title={Event-Triggered Safe Bayesian Optimization on Quadcopters},
+  title={Event-Triggered Safe {Bayesian} Optimization on Quadcopters},
   author={Holzapfel, Antonia and Brunzema, Paul and Trimpe, Sebastian},
-  journal={arXiv preprint arXiv:2312.08058},
-  year={2023}
+  booktitle={Proceedings of the 6nd Conference on Learning for Dynamics and Control},
+  year={2024},
+  publisher={PMLR},
 }
 ```
 
